@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* font-family: 'Whisper', cursive; */
+/* font-family: 'Nova Square', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+#back {
+  height: 100vh;
+  width: 100vw;
+}
+#back video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  object-fit: cover;
+}
+
+#front {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 10vh;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 8vh;
+  font-family: Whisper;
+  color: white;
+  font-weight: 800;
+}
+.links {
+  cursor: pointer;
+  font-size: 8vh;
+  font-family: Whisper;
+  color: white;
+  font-weight: 800;
+}
+
+.hero {
+  color: white;
+  font-family: Nova square;
+  font-size: 18vh;
+  letter-spacing: -30px;
+  margin-left: 2vw;
+}
+
+#page1 {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 5vw;
+  font-size: 5vh;
+}
+
+#page1 h2{
+  font-family: Montserrat;
+}
+
+#page1 span{
+  font-family: Whisper;
+}
+#page1 hr{
+  width: 90%;
+  margin-top: 2vh;
+}
+
+#page1 h3{
+  font-family: Montserrat;
+  max-width: 85%;
+  margin-top: 5vh;
+}
+
+#Drifters{
+  font-size: 4rem;
+  font-family: Nova Square;
+  margin-top: 10vh;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Drifters span{
+  font-family: Whisper;
+  margin-top: 3vh;
+  font-size: 5rem;
+}
+
+.wrapper{
+  display: flex;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  gap: 2vw;
+}
+.cards{
+  height: 80vh;
+  width: 30vw;
+  background-color: aqua;
+  position: relative;
+}
+
+.cards .backVid{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.backVid video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.cards .ForeImg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.ForeImg img{
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out ;
+}
+
+.ForeImg img:hover{
+  opacity: 0;
+}
+
+#page2{
+  min-height: 100vh;  
+  width: 100vw;
+  background-color: red;
+}
