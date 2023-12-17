@@ -315,7 +315,16 @@ nav {
   flex-direction: column;
 }
 
+.left a{
+  font-family: Nova Square;
+}
+
 .mid {
   font-size: 5vh;
   margin-right: 8vw;
+  font-family: Nova Square;
+}
+
+.right{
+  font-size: 4rem;
 }
