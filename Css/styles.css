@@ -71,6 +71,27 @@ nav {
   margin-left: 2vw;
 }
 
+#heroHeading {
+  position: relative;
+}
+
+#heroHeading span {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    /* opacity: 0; */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
+}
+
 #page1 {
   min-height: 100vh;
   width: 100vw;
@@ -78,140 +99,154 @@ nav {
   font-size: 5vh;
 }
 
-#page1 h2{
+#heading {
   font-family: Montserrat;
+  position: relative;
+  transform: translateY(100%);
+  opacity: 0;
 }
 
-#page1 span{
+#page1 span {
   font-family: Whisper;
 }
-#page1 hr{
+#page1 hr {
   width: 90%;
   margin-top: 2vh;
 }
 
-#page1 h3{
+#content {
   font-family: Montserrat;
   max-width: 85%;
   margin-top: 5vh;
+  transform: translateY(100%);
 }
 
-#Drifters{
-  font-size: 4rem;
-  font-family: Nova Square;
-  margin-top: 10vh;
+#Drifters {
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10vh;
 }
 
-#Drifters span{
+#driftHeading {
+  font-size: 4rem;
+  font-family: Nova Square;
+  font-weight: 500;
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+#driftSpan {
   font-family: Whisper;
   margin-top: 3vh;
   font-size: 5rem;
+  transform: translateX(-200%);
+  opacity: 0;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   margin-top: 5vh;
   margin-bottom: 10vh;
   gap: 2vw;
+  /* background-color: pink; */
+  /* opacity:0; */
 }
-.cards{
+.cards {
   height: 80vh;
   width: 30vw;
   background-color: aqua;
   position: relative;
+  transform: translateX(-500%);
+  opacity: 0;
 }
 
-.cards .backVid{
+.cards .backVid {
   height: 100%;
   width: 100%;
   position: absolute;
 }
 
-.backVid video{
+.backVid video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 0;
 }
 
-.cards .ForeImg{
+.cards .ForeImg {
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-.ForeImg img{
+.ForeImg img {
   object-fit: cover;
   position: relative;
   width: 100%;
   height: 100%;
-  transition: opacity 0.5s ease-in-out ;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.ForeImg img:hover{
+.ForeImg img:hover {
   opacity: 0;
 }
 
-#page2{
-  max-height: 100vh;  
+#page2 {
+  max-height: 100vh;
   width: 100vw;
   display: flex;
 }
 
-.specs h1{
+.specs h1 {
   font-family: Nova Square;
   font-size: 5vh;
 }
 
-.specs{
+.specs {
   width: 55%;
   padding: 12vh;
   display: flex;
   flex-direction: column;
-
 }
 
-.specs hr{
+.specs hr {
   margin-top: 5vh;
   width: 80%;
 }
 
-.img{
+.img {
   width: 45%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.imgCard{
+.imgCard {
   width: 90%;
   height: 90%;
-  
 }
 
-.imgCard img{
+.imgCard img {
   border-radius: 20px;
-  margin-top:5vh;
+  margin-top: 5vh;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.contentlist{
-  list-style: none; 
+.contentlist {
+  list-style: none;
 }
 
-.contentlist h2{
+.contentlist h2 {
   font-size: 8vh;
   font-family: Whisper;
 }
 
-.contentlist h4{
+.contentlist h4 {
   font-size: 3vh;
   max-width: 70%;
   font-style: italic;
@@ -219,29 +254,29 @@ nav {
   font-family: Montserrat;
 }
 
-.content ul{
+.content ul {
   display: flex;
   flex-direction: column;
 }
 
-.content a{
+.content a {
   width: max-content;
   font-size: 3vh;
   text-decoration: none;
-  padding-left:7vh;
+  padding-left: 7vh;
   opacity: 0.4;
   color: black;
   margin-top: 2vh;
   padding-bottom: 5vh;
 }
 
-#footer{
+#footer {
   margin-top: 20vh;
   height: 20vh;
   width: 100vw;
 }
 
-.backText{
+.backText {
   background-color: grey;
   position: absolute;
   height: 40%;
@@ -250,14 +285,14 @@ nav {
   z-index: 2;
 }
 
-.backText h1{
+.backText h1 {
   font-family: Whisper;
   opacity: 0.1;
-  cursor:default;
+  cursor: default;
   font-size: 50vh;
 }
 
-.foreText{
+.foreText {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
@@ -268,20 +303,19 @@ nav {
   z-index: 3;
 }
 
-.foreText a{
+.foreText a {
   margin-right: 5vw;
   text-decoration: none;
   color: black;
 }
 
-.left{
+.left {
   font-size: 5vh;
   display: flex;
   flex-direction: column;
 }
 
-.mid{
+.mid {
   font-size: 5vh;
   margin-right: 8vw;
 }
-
